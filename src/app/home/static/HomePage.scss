@@ -1,0 +1,72 @@
+.home-page {
+    height: 100vh;
+    .home-container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 236px);
+        margin: 0 118px;
+        .logo-block {
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                font-size: 80px;
+                line-height: 108px;
+                letter-spacing: 1.6px;
+            }
+        }
+        .link-block {
+            margin-top: 130px;
+            ul {
+                margin-bottom: 0;
+                margin-block-start: 0;
+                li {
+                    list-style-type: none;
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        span {
+                            font-family: Roboto;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: .25em;
+                            color: #fff;
+                            &::before {
+                                content: "";
+                                width: 95px;
+                                border-bottom: 1px solid #fff;
+                                margin-right: 17px;
+                            }
+                            &::after {
+                                content: url(./img/right-arrow.svg);
+                                margin-left: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services-container {
+        display: none;
+        position: fixed;
+        top: 120px;
+        left: 100px;    
+        z-index: 15;
+        height: calc(100vh - 120px);
+        width: calc(100vw - 100px);
+        .services {
+            display: flex;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

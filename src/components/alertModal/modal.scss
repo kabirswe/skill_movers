@@ -1,0 +1,106 @@
+@import '../../scss/variables';
+.common-alert-modal-container {
+  .modal-content {
+    height: 214px;
+    width: 472px;
+    border-radius: 5px;
+    border: 0;
+    top: 220px
+  }
+  .modal-header {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    border-radius: 5px;
+    background: $white-smoke1;
+    .close {
+     display: none;
+    }
+  }
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosans;
+    line-height: 170%;
+    color: $lochmara;
+  }
+  .modal-footer {
+    padding: 0;
+    border-top: none;
+
+    .button-group {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .button-content {
+        width: 105px;
+        height: 40px;
+        .btnShape {
+          border-radius: 5px;
+          line-height: 170%;
+          font-size: 14px;
+          font-family: $notosans;
+        }
+      }
+      .right{
+        margin-left: 10px;
+      }
+    }
+  }
+  .modal-body {
+    background: $white;
+    position: unset;
+    padding: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex: 0.4 1 auto !important;
+    padding-top: 20px;
+
+    .message-conatiner {
+      width: 360px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      .text-container {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        font-family: $notosans;
+        color: $label_gray;
+
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+  .customClose {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      background-color: #f8f9fa;
+      border-radius: 999px;
+      background-position: center;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+    }
+  }
+}

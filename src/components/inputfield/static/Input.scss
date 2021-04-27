@@ -1,0 +1,88 @@
+.input-block {
+  position: relative;
+  label {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
+      color: #4F4F4F;
+    }
+    .link a {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: #00A9E2;
+      text-decoration: none;
+      transition: all ease-in-out .35s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  input {
+    height: 45px;
+    width: 100%;
+    margin: 10px 0 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 15px;
+    color: #4F4F4F;
+    &:focus {
+      outline: none !important;
+      border: 1px solid #E0E0E0;
+      box-shadow: none;
+    }
+    &.is-invalid {
+      border: 1px solid #EB5757;
+      border-radius: 3px;
+      margin: 10px 0 25px
+    }
+  }
+  .error-message {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    color: #EB5757;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    svg {
+      position: relative;
+      top: 1px;
+      margin-right: 2px;
+    }
+  }
+  .password-visiablity {
+    position: absolute;
+    right: 12px;
+    top: 36px;
+    cursor: pointer;
+  }
+}
+
+.right-input-text {
+  text-align: end;
+}
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+  // border: 1px solid $red;
+  outline: none;
+}
+.disabled {
+  background: red !important;
+  border: 1px solid gray;
+
+}
+.inputError {
+  border: 1px solid red !important;
+  outline: none;
+}

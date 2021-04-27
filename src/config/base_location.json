@@ -1,0 +1,7 @@
+{
+  "base_url": "",
+  "base_ip": "",
+  "api_base_url": "https://wu89z93mp4.execute-api.us-west-2.amazonaws.com/dev",
+  "api_base_ip": "",
+  "s3_image_link": "https://s3.amazonaws.com/"
+}

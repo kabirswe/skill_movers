@@ -1,0 +1,36 @@
+// import starting from the src/ folder
+@import "../../styles/styles.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus {
+  outline:0;
+}
+
+.app {
+  background-color: #ffffff;
+  background-image: url(../home/static/img/home-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size:120px;
+      padding: 20% 0;
+      color: $primaryColor;
+    }
+  }
+}

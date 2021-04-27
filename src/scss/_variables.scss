@@ -1,0 +1,36 @@
+$theme-colors: (
+  'primary': #0074d9,
+  'danger': #ff4136
+);
+
+$white: #fff !default;
+$pink: #e83e8c !default;
+$red: #d50a0a !default;
+$yellow: #ffc107 !default;
+$green: #4dbd74 !default;
+
+
+// border color
+$back_7070: #707070;
+
+// Font Family
+$notosans: 'Noto Sans JP', sans-serif;
+$notosanMedium: $notosans;
+$notosansBold: $notosans;
+$semiBold: 600;
+$bold: bold;
+
+// Images
+$auth-container-bottom-bg: '/assets/img/login/loginbg-bottom.png';
+$auth-container-top-bg: '/assets/img/login/loginbg-top.png';
+$calendar-sharp: '/assets/img/calendar-sharp.svg';
+$info-circle: '/assets/img/login/info-circle.svg';
+
+
+// Font weight variables
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;

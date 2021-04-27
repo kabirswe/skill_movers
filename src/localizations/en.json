@@ -1,0 +1,85 @@
+{
+  "translation": {
+    "HEADER": {
+      "ADMIN_TYPE": "Super Admin",
+      "LOGOUT": "Logout",
+      "PROFILE": "Profile",
+      "CLOUD_BUTTON": "upload"
+    },
+    "HEADER_DROPDOWN": ["login", "signup", "admin", "users"],
+    "LANGUAGE": {
+      "ENGLISH": "English",
+      "JAPANESE": "Japanese"
+    },
+    "SIDE_NAV": {
+      "MENU_ITEM": {
+        "CONTENT": "Content",
+        "PUBLIC": "public",
+        "STATISTICS": "Statistics",
+        "RAW_MATERIAL": "Raw material",
+        "USER": "ユーザー追加",
+        "SYSTEM_SETTING": "System setting",
+        "PROFILE": "Profile",
+        "ROLE_SETTINGS": "Role Settings",
+        "MAIL":"Mail List"
+      }
+    },
+    "DASHBOARD": {
+      "WELCOME_TEXT": "Welcome to Admin"
+    },
+    "COMMON": {
+      "BUTTON_SEND": "Send"
+    },
+    "ERROR_API": {
+      "SERVER_NOT_ACCESS": "Something went wrong"
+    },
+    "SUCCESS_MESSAGE_API": {
+      "ADD": "Item successfully added",
+      "REMOVE": "Item successfully deleted",
+      "UPDATE": "Successfully updated"
+    },
+    "USER_MANAGEMENT": {
+      "ADD_USER": "ユーザー追加",
+      "USER_MANAGEMENT_TITLE": "ユーザー管理",
+      "USER_MANAGEMENT_SUBTITLE": "⼭⽥太郎",
+      "EMAIL_ADDRESS": "メール アドレス",
+      "USERNAME": "ユーザー名",
+      "USER_ROLE": "ユーザー　ロール",
+      "DELIVERY_DESTINATION": "配信先",
+      "SITE_ADMINSTRATOR": "サイト管理者",
+      "WRITER": "ライター",
+      "THE_EDITOR": "エディター",
+      "RECOGNISER": "承認者",
+      "NEW_ROLE": "新規ロール",
+      "INVITATION": "招待",
+      "FULL_NAME": "氏名",
+      "ROLE": "ロール",
+      "PARTICIPATION_DAY": "参加日",
+      "BLOCK": "ブロック",
+      "LOCK": "ロック",
+      "FULLNAME": "氏名",
+      "SAVE": "保存",
+      "USER_MANAGEMENT_EDIT": "の編集",
+      "CREATE_ROLE": "Create",
+      "EDIT": "Edit",
+      "CANCEL": "Cancel",
+      "FULL_NAME_ERROR": "The fullname field is required.",
+      "EMAIL_ERROR": "Email address field is required",
+      "INVALID_EMAIL_ERROR": "Email is not valid.",
+      "USER_ROLE_ERROR": "User role permission is required",
+      "USER_MANAGEMENT_EDIT_TITLE": "User Edit",
+      "USER_ACCOUNT_STATUS": "User Account Status"
+    },
+    "LOGIN": {
+      "PAGE_TITLE": "Login",
+      "EMAIL_LABEL": "E-mailアドレス または、ID",
+      "EMAIL_PLACEHOLDER": "メールアドレスを入力",
+      "PASSWORD_LABEL": "パスワード",
+      "PASSWORD_PLACEHOLDER": "パスワードを入力する",
+      "FORGOT_PASSWORD_TEXT": "ID・パスワードを忘れた場合",
+      "LOGIN_BUTTON_TEXT": "ログイン",
+      "FORGET_PASSWORD_TEXT": "ID・パスワードを忘れた場合 ",
+      "LOGIN_ERROR_TEXT": "パスワードまたはE-mailアドレスが違います"
+    }
+  }
+}

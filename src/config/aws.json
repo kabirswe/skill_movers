@@ -1,0 +1,7 @@
+{
+  "region": "us-east-1",
+  "buckets": {
+    "s3_bucket_for_saving_sipsi_files": "spw-sipsi-staging",
+    "s3_bucket_for_configuration_files": "spw-configurations-staging"
+  }
+}

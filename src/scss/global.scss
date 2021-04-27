@@ -1,0 +1,71 @@
+@import './variables.scss';
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.table {
+  margin-bottom: 0;
+  thead {
+    th {
+      vertical-align: middle;
+    }
+  }
+  td, th {
+    padding: 4px .75rem;
+    vertical-align: middle;
+  }
+}
+input {
+  &.error {
+    border: 1px solid $red;
+  }
+}
+input:focus, textarea:focus, .form-control:focus {
+  outline: 1px solid #00abab !important;
+  border-color: #00abab !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+}
+
+.dropdown-menu {
+  border-radius: 2px;
+}
+
+.dropdown-menu.dropdown-menu-right .dropdown-item.active, .dropdown-item:active {
+  color: #212529 !important;
+  text-decoration: none;
+  background-color: transparent;
+  outline: 0;
+}
+.dropdown-menu.dropdown-menu-right .dropdown-item {
+  padding: 0px 13px 0 13px;
+  font-weight: 400;
+  border: 0;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+input::-ms-reveal, input::-ms-clear {
+  display: none !important;
+}
+.text-danger{
+  color:#D50A0A !important;
+}
+.modal-content{
+  cursor: default !important;
+}
+.email-datatable-custom{
+  min-width: 200px !important;
+  max-width: 200px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+img:-moz-loading {
+  visibility: hidden;
+}

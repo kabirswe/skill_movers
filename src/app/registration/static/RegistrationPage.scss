@@ -1,0 +1,160 @@
+.registration-page {
+    .registration-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw - 412px);
+        height: 100vh;
+        .registration-wrapper {
+            width: 560px;
+            background-color: #fafafa;
+            padding: 36px 45px 45px;
+            h2 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 23px;
+                color: #013A6D;
+                margin-bottom: 20px;
+                margin-top: 0;
+                hr {
+                    background-color: #F2F2F2;
+                    border: 0;
+                    height: 1px;
+                    width: 100%;
+                    margin-left: 18px;
+                }
+            }
+            
+            .btn-block {
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .btn-gmail,
+                .btn-facebook,
+                .btn-linkedin {
+                    width: 200px;
+                    height: 45px;
+                    background: #4285F4;
+                    border-radius: 3px;
+                    padding: 0;
+                    border: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    span {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #FFFFFF;
+                        margin-left: 6px;
+                    }
+                }
+                .btn-facebook {
+                    background: #4267B2;
+                }
+                .btn-linkedin {
+                    width: 50px;
+                    background: #0077B5;
+                }
+            }
+            form {
+                .full-label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .label-name {
+                        font-weight: bold;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #4F4F4F;
+                    }
+                    a {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: right;
+                        color: #828282;
+                        text-decoration: none;
+                        margin-top: 20px;
+                        span {
+                            color: #00A9E2;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .inline-input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .input-block {
+                        width: calc(50% - 10px);
+                    }
+                }
+                .inline-input-6 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .input-block {
+                        width: 16.6%;
+                    }
+                }
+                .action-block {
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        width: 200px;
+                        height: 45px;
+                        background: #013A6D;
+                        border-radius: 3px;
+                        padding: 0;
+                        border: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+                     a {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: right;
+                        color: #828282;
+                        text-decoration: none;
+                        span {
+                            color: #013A6D;
+                            font-weight: bold;
+                        }
+                     }
+                     .link-block {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                     }
+                }
+            }
+        }
+        .login-link {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: right;
+            color: #828282;
+            text-decoration: none;
+            margin-top: 20px;
+            span {
+                color: #00A9E2;
+                font-weight: bold;
+            }
+        }
+    }
+}
