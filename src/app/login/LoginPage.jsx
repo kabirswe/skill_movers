@@ -26,20 +26,29 @@ export const LoginPage = () => {
       emailOrPhone: email.value,
       password: password.value,
     };
-    try {
-      AxiosServices.post(ApiServices.SIGN_IN, data, false)
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          setEmail({
-            ...email,
-            error: error.response.data.message,
-            required: true,
+    if (email.value == "" || password.value == "") {
+      if (email.value == "") {
+        setEmail({ ...email, required: true });
+      }
+      if (password.value == "") {
+        setPassword({ ...password, required: true });
+      }
+    } else {
+      try {
+        AxiosServices.post(ApiServices.SIGN_IN, data, false)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((error) => {
+            setEmail({
+              ...email,
+              error: error.response.data.message,
+              required: true,
+            });
           });
-        });
-    } catch (err) {
-      console.log("catch", err);
+      } catch (err) {
+        console.log("catch", err);
+      }
     }
   }, [email, password]);
 
