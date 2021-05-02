@@ -1,12 +1,12 @@
-import {AUTH} from '../../constants/auth';
+import { AUTH } from "../../constants/auth";
 
 export const initialState = {
-  loginInput: '',
-  apiError: '',
-  loggedInUserId: '',
+  loginInput: "",
+  apiError: "",
+  loggedInUserId: "",
   isRoutePrepared: false,
   loginData: {},
-  permissions: null
+  permissions: null,
 };
 
 export default function authReducer(state = initialState, action) {
@@ -14,42 +14,47 @@ export default function authReducer(state = initialState, action) {
     case AUTH.FIELD_INITIALIZATION:
       return {
         ...state,
-        ...action.body
+        ...action.body,
       };
     case AUTH.CALL_LOGIN_API.SUCCESS:
       return {
         ...state,
-        apiError: '',
+        apiError: "",
         loginData: action.result && action.result.loginData,
-        permissions: action.result && action.result.permissions
+        permissions: action.result && action.result.permissions,
       };
     case AUTH.CALL_LOGIN_API.FAILURE:
       return {
         ...state,
-        apiError: action.error
+        apiError: action.error,
       };
-      case AUTH.CLEAR_LOGIN_DATA.SUCCESS:
-        console.log('************************ clearing login data')
+    case AUTH.CLEAR_LOGIN_DATA.SUCCESS:
+      console.log("************************ clearing login data");
       return {
         ...state,
-        loginData: {}
+        loginData: {},
+      };
+    case AUTH.CLEAR_LOGIN_DATA.FAILURE:
+      return {
+        ...state,
+        apiError: {},
       };
     case AUTH.ROUTE_PREPARED.SUCCESS:
-    return {
-      ...state,
-      isRoutePrepared: action.flag 
-    };
+      return {
+        ...state,
+        isRoutePrepared: action.flag,
+      };
     case AUTH.GET_PERMISSIONS.SUCCESS:
       return {
         ...state,
-        permissions: action.result
+        permissions: action.result,
       };
     case AUTH.UPDATE_USERNAME.SUCCESS:
       let loginData = state.loginData;
       loginData.username = action.result;
       return {
         ...state,
-        loginData: {...loginData}
+        loginData: { ...loginData },
       };
     default:
       return state;

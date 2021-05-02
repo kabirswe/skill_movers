@@ -1,7 +1,8 @@
-import config from '../config';
+import config from "../config";
 const ApiServices = {
-  TEST_API: 'tags',
-  SIGN_UP: '/authentication/signup',
+  TEST_API: "tags",
+  SIGN_UP: "/authentication/signup",
+  SIGN_IN: "/authentication/signin",
   // CHECK_USERNAME: 'api/user/check/username',
   // GET_MAIL_POSTING: (id) => `api/mailmagazine/email/history/list/${id}`,
   // SNS_POST_UPDATE: (id) => `api/sns/postings/post/${id}`,
