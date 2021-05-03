@@ -1,42 +1,46 @@
-import {AUTH} from '../../constants/auth';
+import { AUTH } from "../../constants/auth";
 
 export function loginApi(body) {
   return {
     type: AUTH.CALL_LOGIN_API.MAIN,
-    body
+    body,
+  };
+}
+export function clearApiError(body) {
+  return {
+    type: AUTH.CLEAR_LOGIN_DATA.FAILURE,
   };
 }
 export function fieldInitialization(body) {
   return {
     type: AUTH.FIELD_INITIALIZATION,
-    body
+    body,
   };
 }
 
 export function updateUserName(userName) {
   return {
     type: AUTH.UPDATE_USERNAME.MAIN,
-    userName
+    userName,
   };
 }
 
 export function routePrepare(flag) {
   return {
     type: AUTH.ROUTE_PREPARED.MAIN,
-    flag
+    flag,
   };
 }
 
 export function getPermissions(permissions) {
   return {
     type: AUTH.GET_PERMISSIONS.MAIN,
-    permissions
+    permissions,
   };
 }
 
 export function clearLoginData() {
   return {
     type: AUTH.CLEAR_LOGIN_DATA.SUCCESS,
-    
   };
 }
